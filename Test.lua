@@ -13,11 +13,14 @@
 
 function main()
 
-  --Open a file and stored in filePath varible
+  -- Open the file explorer and returs a path and a boolean
+  -- TODO It needs to be able to select more thant one file, for the moment it is selecting just one file
   retval, filePath = reaper.GetUserFileNameForRead("", "Add files", "wav")
   if retval == false then return end 
   
   reaper.ShowConsoleMsg(filePath)
+  
+  io.read()
   
 end
 
