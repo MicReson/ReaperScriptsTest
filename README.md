@@ -1,2 +1,3 @@
-# ReaperScriptsTest
- Testing Reaper DAW Scripts ReaScripts
+# ReaperScriptsTest (WIP)
+------------------------------------------
+ Testing Reaper DAW Scripts ReaScripts using LUA 
