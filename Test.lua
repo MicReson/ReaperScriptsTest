@@ -9,18 +9,19 @@
     7) Create a master track and add all the files to be children of the master track
     ]]--
 
-
-
+  
 function main()
+  
+  -- get the current track and store it
+  -- check if user has a track selected otherwise set MediaTrack = 0
+  -- TODO: research how to create a new track at runtime, it can be under the selectect track or at the top of the project
 
-  -- Open the file explorer and returs a path and a boolean
-  -- TODO It needs to be able to select more thant one file, for the moment it is selecting just one file
+  --local currentTrack = reaper.GetTrack(0, ) -- project value=0 it define the current project
+  
   retval, filePath = reaper.GetUserFileNameForRead("", "Add files", "wav")
-  if retval == false then return end 
+  if retval == false then return end
   
-  reaper.ShowConsoleMsg(filePath)
-  
-  io.read()
+  --reaper.ShowConsoleMsg(filePath)
   
 end
 
